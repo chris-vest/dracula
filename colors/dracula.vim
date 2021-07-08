@@ -232,7 +232,7 @@ hi! link Question     DraculaFgBold
 hi! link Search       DraculaSearch
 call s:h('SignColumn', s:comment)
 hi! link TabLine      DraculaBoundary
-hi! link TabLineFill  DraculaBgDarker
+hi! link TabLineFill  DraculaBgDark
 hi! link TabLineSel   Normal
 hi! link Title        DraculaGreenBold
 hi! link VertSplit    DraculaBoundary
@@ -241,76 +241,76 @@ hi! link VisualNOS    Visual
 hi! link WarningMsg   DraculaOrangeInverse
 
 " }}}
-" Syntax: {{{
+" syntax: {{{
 
-" Required as some plugins will overwrite
-call s:h('MatchParen', s:green, s:none, [s:attrs.underline])
-call s:h('Conceal', s:cyan, s:none)
+" required as some plugins will overwrite
+call s:h('matchparen', s:green, s:none, [s:attrs.underline])
+call s:h('conceal', s:cyan, s:none)
 
-" Neovim uses SpecialKey for escape characters only. Vim uses it for that, plus whitespace.
+" neovim uses specialkey for escape characters only. vim uses it for that, plus whitespace.
 if has('nvim')
-  hi! link SpecialKey DraculaRed
-  hi! link LspDiagnosticsUnderline DraculaFgUnderline
-  hi! link LspDiagnosticsInformation DraculaCyan
-  hi! link LspDiagnosticsHint DraculaCyan
-  hi! link LspDiagnosticsError DraculaError
-  hi! link LspDiagnosticsWarning DraculaOrange
-  hi! link LspDiagnosticsUnderlineError DraculaErrorLine
-  hi! link LspDiagnosticsUnderlineHint DraculaInfoLine
-  hi! link LspDiagnosticsUnderlineInformation DraculaInfoLine
-  hi! link LspDiagnosticsUnderlineWarning DraculaWarnLine
+  hi! link specialkey draculared
+  hi! link lspdiagnosticsunderline draculafgunderline
+  hi! link lspdiagnosticsinformation draculacyan
+  hi! link lspdiagnosticshint draculacyan
+  hi! link lspdiagnosticserror draculaerror
+  hi! link lspdiagnosticswarning draculaorange
+  hi! link lspdiagnosticsunderlineerror draculaerrorline
+  hi! link lspdiagnosticsunderlinehint draculainfoline
+  hi! link lspdiagnosticsunderlineinformation draculainfoline
+  hi! link lspdiagnosticsunderlinewarning draculawarnline
 else
-  hi! link SpecialKey DraculaSubtle
+  hi! link specialkey draculasubtle
 endif
 
-hi! link Comment DraculaComment
-hi! link Underlined DraculaFgUnderline
-hi! link Todo DraculaTodo
+hi! link comment draculacomment
+hi! link underlined draculafgunderline
+hi! link todo draculatodo
 
-hi! link Error DraculaError
-hi! link SpellBad DraculaErrorLine
-hi! link SpellLocal DraculaWarnLine
-hi! link SpellCap DraculaInfoLine
-hi! link SpellRare DraculaInfoLine
+hi! link error draculaerror
+hi! link spellbad draculaerrorline
+hi! link spelllocal draculawarnline
+hi! link spellcap draculainfoline
+hi! link spellrare draculainfoline
 
-hi! link Constant DraculaPurple
-hi! link String DraculaYellow
-hi! link Character DraculaPink
-hi! link Number Constant
-hi! link Boolean Constant
-hi! link Float Constant
+hi! link constant draculapurple
+hi! link string draculayellow
+hi! link character draculapink
+hi! link number constant
+hi! link boolean constant
+hi! link float constant
 
-hi! link Identifier DraculaFg
-hi! link Function DraculaGreen
+hi! link identifier draculafg
+hi! link function draculagreen
 
-hi! link Statement DraculaPink
-hi! link Conditional DraculaPink
-hi! link Repeat DraculaPink
-hi! link Label DraculaPink
-hi! link Operator DraculaPink
-hi! link Keyword DraculaPink
-hi! link Exception DraculaPink
+hi! link statement draculapink
+hi! link conditional draculapink
+hi! link repeat draculapink
+hi! link label draculapink
+hi! link operator draculapink
+hi! link keyword draculapink
+hi! link exception draculapink
 
-hi! link PreProc DraculaPink
-hi! link Include DraculaPink
-hi! link Define DraculaPink
-hi! link Macro DraculaPink
-hi! link PreCondit DraculaPink
-hi! link StorageClass DraculaPink
-hi! link Structure DraculaPink
-hi! link Typedef DraculaPink
+hi! link preproc draculapink
+hi! link include draculapink
+hi! link define draculapink
+hi! link macro draculapink
+hi! link precondit draculapink
+hi! link storageclass draculapink
+hi! link structure draculapink
+hi! link typedef draculapink
 
-hi! link Type DraculaCyanItalic
+hi! link type draculacyanitalic
 
-hi! link Delimiter DraculaFg
+hi! link delimiter draculafg
 
-hi! link Special DraculaPink
-hi! link SpecialComment DraculaCyanItalic
-hi! link Tag DraculaCyan
-hi! link helpHyperTextJump DraculaLink
-hi! link helpCommand DraculaPurple
-hi! link helpExample DraculaGreen
-hi! link helpBacktick Special
+hi! link special draculapink
+hi! link specialcomment draculacyanitalic
+hi! link tag draculacyan
+hi! link helphypertextjump draculalink
+hi! link helpcommand draculapurple
+hi! link helpexample draculagreen
+hi! link helpbacktick special
 
 "}}}
 
